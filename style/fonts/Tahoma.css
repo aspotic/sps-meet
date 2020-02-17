@@ -1,0 +1,96 @@
+body,
+input,
+select,
+textarea
+{
+	font-family: Tahoma, Arial;
+	font-size:16px;
+}
+div#cal1:hover #Calendar1
+{
+    font-family: Verdana; 
+    font-Size: 8pt; 
+}
+div#pageTitleText
+{
+	font-size:40px;
+	font-weight:bold;
+}
+
+/*
+body
+{
+    font-size:18px;
+}
+a
+{
+	text-decoration: none;
+	font-weight: bold;
+}
+li
+{
+	font-weight: bold;
+}
+li.title
+{
+	
+	font-weight: bold;
+	font-size:23px;
+}
+input,
+select,
+textarea
+{
+	font-weight: bold;
+}
+table.tableList th 
+{
+    font-weight: bold;
+}
+div.tableTitle
+{
+    font-weight: bold;
+}
+table.tableList td 
+{
+    font-weight: bold;
+}
+div#convBoxHead
+{
+	font-size: 20px;
+	font-weight: bold;
+}
+div#memberBoxHead
+{
+	font-size: 20px;
+	font-weight: bold;
+}
+div#memberBoxLegend li
+{
+	margin:0px;
+	font-size:14px;
+	font-weight: normal;
+}
+div#replyBoxHead
+{
+	font-size: 20px;
+	font-weight: bold;
+}
+div.member
+{
+    font-size: 15px;
+    font-weight: bold;
+}
+div.domain
+{
+    font-size: 10px;
+}
+span.name1
+{
+    font-weight: bold;
+}
+span.name2
+{
+    font-weight: bold;
+}
+*/

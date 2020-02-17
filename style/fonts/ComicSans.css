@@ -1,0 +1,18 @@
+body,
+input,
+select,
+textarea
+{
+	font-family: Comic Sans MS;
+	font-size:16px;
+}
+div#cal1:hover #Calendar1
+{
+    font-family: Verdana; 
+    font-Size: 8pt; 
+}
+div#pageTitleText
+{
+	font-size:40px;
+	font-weight:bold;
+}

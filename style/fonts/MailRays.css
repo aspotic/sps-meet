@@ -1,0 +1,23 @@
+@font-face {
+  font-family: MailRays;
+  src: url('ttf_files/MailRays.ttf');
+}
+
+body,
+input,
+select,
+textarea
+{
+	font-family: MailRays, Comic Sans MS;
+	font-size:19px;
+}
+div#cal1:hover #Calendar1
+{
+    font-family: Verdana; 
+    font-Size: 8pt; 
+}
+div#pageTitleText
+{
+	font-size:40px;
+	font-weight:bold;
+}

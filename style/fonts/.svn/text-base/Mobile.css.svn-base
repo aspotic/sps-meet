@@ -1,0 +1,103 @@
+body,
+input,
+select,
+textarea
+{
+	font-family: Tahoma, Verdana;
+}
+div#pageTitleText
+{
+	font-weight:bold;
+}
+html
+{
+	font-size: 200%;
+}
+a
+{
+    font-weight: bold;
+}
+a:hover
+{
+    text-decoration: none;
+    font-weight: bold;
+}
+table.tableList th 
+{	
+    font-size: 0em;
+	font-weight: bold;
+}
+div.tableTitle
+{	
+	font-weight: bold;
+}
+table.tableList td 
+{
+	font-weight: bold;
+}
+li
+{
+	font-weight: normal;
+}
+li.title
+{
+	font-weight: bold;
+}
+input,
+select,
+textarea
+{
+	font-weight: normal;
+	font-size: 1em;
+}
+.submit
+{
+	font-weight: bold;
+	font-size: 1em;
+}
+div#cal1 #Calendar1
+{
+    font-family: Verdana; 
+}
+div#replyBoxHead
+{
+	font-weight: bold;
+}
+ div#convBoxHead
+{
+	font-weight: bold;
+}
+div.member
+{
+    font-weight: bold;
+}
+span.name2,
+span.date2,
+span.delete2
+{
+    font-weight: bold;
+}
+span.name1,
+span.date1,
+span.delete1
+{
+    font-weight: bold;
+}
+span.date1,
+span.date2
+{
+    font-weight: normal;
+    font-size: 0.5em;
+}
+.submitFoot
+{
+    font-size: 1em;
+}
+.col2,
+.col3,
+.col2j,
+.col3j,
+.col4j
+{
+    font-size: 0;
+}

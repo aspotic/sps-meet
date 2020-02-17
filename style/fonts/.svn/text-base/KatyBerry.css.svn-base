@@ -1,0 +1,54 @@
+@font-face {
+  font-family: KatyBerry;
+  src: url('ttf_files/KatyBerry.ttf');
+}
+
+body,
+input,
+select,
+textarea
+{
+	font-family: KatyBerry, Comic Sans MS;
+    font-size:23px;
+}
+div#cal1:hover #Calendar1
+{
+    font-family: Verdana; 
+    font-Size: 8pt; 
+}
+div#pageTitleText
+{
+	font-size:40px;
+	font-weight:bold;
+}
+
+/*
+li.title
+{
+	font-size:23px;
+}
+div#convBoxHead
+{
+	font-size: 20px;
+}
+div#memberBoxHead
+{
+	font-size: 20px;
+}
+div#memberBoxLegend li
+{
+	font-size:14px;
+}
+div#replyBoxHead
+{
+	font-size: 20px;
+}
+div.member
+{
+    font-size: 15px;
+}
+div.domain
+{
+    font-size: 10px;
+}
+*/

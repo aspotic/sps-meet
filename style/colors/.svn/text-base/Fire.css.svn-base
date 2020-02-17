@@ -1,0 +1,222 @@
+/****Tag Configuration****/
+body 
+{
+    background: #FFA200;
+}
+img
+{
+    visibility: hidden;
+}
+
+/*links*/
+a
+{
+	color: #006Ba2;
+}
+a:hover
+{
+	color: #000000;
+}
+
+
+/*lists*/
+li
+{
+	color: #975BaA;
+}
+li.title
+{
+	color: #771B8A;
+}
+
+
+/*forms*/
+input,
+select,
+textarea
+{
+	color: #FFFFFF;
+	background:#470B5A;
+	border-color: #470B5A;
+}
+input.submit
+{
+	color: #FFFFFF;
+	background:#874B9A;
+	border-color:#470B5A;
+}
+
+
+/*Tables*/
+    table.tableList th 
+    {
+	    color: #000000;
+	    border-color:#B35215;
+	    background:#B35215;
+    }
+    div.tableTitle
+    {
+	    color: #000000;
+	    background:#B35215;
+	    border-color:#B35215;
+    }
+    table.tableList td 
+    {
+	    color: #000000;
+	    border-color:#B35215;
+	    background:#FFc240;
+    }
+
+
+/****Universal dividers****/
+div#pageTitle 
+{
+	background: #571B6A;
+	border-bottom: #975BaA
+}
+div#pageTitleText
+{
+	color:#FFA200;
+}
+div#navigation 
+{
+	background: #975BaA;
+}
+div#navigation a
+{
+    color:#003B72;
+}
+div#navigation a:hover
+{
+    color:#000000;
+}
+
+
+/****index.aspx****/
+div#selectTheme 
+{
+	background:#FFc240;
+	border-color:#FFc240;
+}
+div#joinMeeting 
+{
+	background:#FFc240;
+	border-color:#FFc240;
+}
+div#createMeeting 
+{
+	background:#FFc240;
+	border-color:#FFc240;
+    }
+    div#cal1
+    {
+        background: url('../images/calendar.gif');
+        }
+        div#cal1:hover #Calendar1
+        {
+            background:#FFFFFF;
+            border-color: #9CCC3C;
+            color: #50720B; 
+        }
+
+
+/****meeting.aspx****/
+div#convBoxHead
+{
+	color:#571B6A;
+	background:#FFc240;
+	border-color:#FFc240;
+}
+div#convBox
+{
+	background:#FFc240;
+	border-color:#FFc240;
+}
+div#memberBoxHead
+{
+	color:#571B6A;
+	background:#FFc240;
+	border-color:#FFc240;
+}
+div#memberBox
+{
+	background:#FFc240;
+	border-color:#FFc240;
+    }
+div#replyBoxHead
+{
+	color:#571B6A;
+	background:#FFc240;
+	border-color:#FFc240;
+}
+div#replyBox
+{
+	background:#FFc240;
+	border-color:#FFc240;
+    }
+    textarea.replyBoxMsg
+    {
+	    border-color:#571B6A;
+	    background: #571B6A;
+	    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#975BaA', endColorstr='#571B6A');
+	    background: -moz-linear-gradient(top,  #975BaA,  #571B6A);
+    }
+    input.replyBoxSendMsg
+    {
+	    background:#571B6A;
+	    color: #a77BcA;
+	    border-color:#571B6A;
+    }
+    
+    
+/*meeting.aspx message windows*/
+div.member
+{
+    color:#000000;
+    
+}
+div.domain
+{
+    color:#975BaA;
+}
+div.msg1Title
+{
+    border-color: #000000;
+    background: #FFA200;
+}
+div.msg2Title
+{
+    border-color: #000000;
+    background: #975BaA;
+}
+div.msg1Body
+{
+    color: #000000;
+    border-color: #000000;
+	background:#FFA200;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFA200', endColorstr='#FFc240');
+	background: -moz-linear-gradient(top,  #FFA200,  #FFc240);
+}
+div.msg2Body
+{
+    color: #FFFFFF;
+    border-color: #000000;
+	background:#FFA200;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#571B6A', endColorstr='#975BaA');
+	background: -moz-linear-gradient(top,  #571B6A,  #975BaA);
+}
+span.name2
+{
+	color:#FFA200;
+}
+span.name1
+{
+	color:#771B8A;
+}
+
+  
+/*chooseTranscript.aspx*/
+.checkbox 
+{
+    background:#FFc240;
+}

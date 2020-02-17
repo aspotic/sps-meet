@@ -1,0 +1,1 @@
+<% @ Page Language="VB" aspcompat="true" CodeFile="rmMsg.aspx.vb" Inherits="rmMsg" %>

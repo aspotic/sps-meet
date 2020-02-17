@@ -1,0 +1,512 @@
+/****Tag Configuration****/
+html
+{
+	height: 100%;
+}
+body 
+{
+	padding:0;
+	margin:0;
+	height:100%;
+}
+img 
+{
+    visibility: hidden;
+    vertical-align: middle;
+    height: 100%;
+}
+div#spacer
+{
+    height: 30px;
+}
+/*links*/
+a
+{
+	text-decoration: none;
+}
+a:hover
+{
+	text-decoration: none;
+}
+/*lists*/
+ul
+{
+	list-style: none;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+}
+li
+{
+	padding: 0px;
+	text-align: center;
+	margin-top:10px;
+}
+li.title
+{
+	padding: 0px;
+	text-align: center;
+	margin-top:0px;
+	margin-bottom:5px;
+}
+/*forms*/
+input,
+select,
+textarea
+{
+	width: 200px;
+	border-style: solid;
+	border-width: 0;
+}
+input.submit
+{
+	border-style: solid;
+	border-width: 3px;
+}
+/*Tables*/
+table.tableList
+{
+	width:95%;	
+	margin-bottom:30px;
+	margin-left: auto;
+	margin-right: auto;
+    }
+    table.tableList th 
+    {
+	    border-style: solid;
+	    border-width: 2px;
+    }
+    div.tableTitle
+    {
+	    width:94%;	
+	    margin: 0 auto;
+	    border-style: solid;
+	    border-width: 3px;
+    }
+    table.tableList td 
+    {
+	    border-style: solid;
+	    border-width: 1px;
+        text-align: left;
+    }
+    table.tableList .col1
+    {
+        width: 24%;   
+    }
+    table.tableList .col2,
+    table.tableList .col3
+    {
+        width: 26%;   
+    }
+    table.tableList .col4
+    {
+        width: 24%;   
+    }
+    table.tableList .col1j
+    {
+        width: 22%;   
+    }
+    table.tableList .col2j,
+    table.tableList .col3j
+    {
+        width: 29%;   
+    }
+    table.tableList .col4j
+    {
+        width: 20%;   
+    }
+
+
+
+/****Universal dividers****/
+div#pageTitle 
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	overflow: hidden;
+	border-bottom-style: solid;
+	border-bottom-width: 0px;
+}
+div#pageTitleImage
+{
+    float: right;
+    height:40px;
+    margin-right:50px;
+}
+div#pageTitleText
+{
+    float: left;
+    margin-left:50px;
+    height:40px;
+}
+div#navigation 
+{
+	padding:3px 0px 3px 0px;
+	text-align: center;
+}
+div#body,
+div#bodyMeet
+{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    position: relative;
+}
+
+
+
+
+/****index.aspx****/
+div#mainContainer
+{
+    width: 858px;
+    margin: 0 auto;
+}
+div#selectTheme 
+{
+    float: left;
+	width: 230px;
+	height: 300px;
+	margin: 0px 20px;
+	padding: 5px;
+	border-radius:15px;
+	border-style: solid;
+	border-width: 3px;
+}
+div#joinMeeting 
+{
+    float: left;
+	width: 230px;
+	height: 300px;
+	margin: 0px 20px;
+	padding: 5px;
+	border-radius:20px;
+	border-style: solid;
+	border-width: 3px;
+}
+div#createMeeting 
+{
+    float: left;
+	width: 230px;
+	height: 300px;
+	margin: 0px 20px;
+	padding: 5px;
+	border-radius:15px;
+	border-style: solid;
+	border-width: 3px;
+    }
+    #curDate
+    {
+        float: right;
+        width: 160px;
+        margin-right: 15px;
+    }
+    #openMeeting
+    {
+        margin-top: 15px;
+    }
+    div#cal1
+    {
+        float: left;
+        margin-left: 15px;
+        margin-top: 4px;
+        height: 22px;
+        width: 28px;
+        }
+        div#cal1 #Calendar1
+        {
+            visibility: hidden;
+            height: 1px;
+            width: 1px;
+            overflow: hidden;
+        }
+        div#cal1:hover #Calendar1
+        {
+            visibility: visible;
+            position: relative;
+            top: -110px;
+            left:-70px;
+            z-index: 500;
+            height: 160px;
+            width: 160px;
+	        border-style: solid;
+	        border-width: 1px;
+            padding: 1px;
+        }
+
+
+
+
+
+
+/****meeting.aspx****/
+div#convBoxHead
+{
+	position: absolute;
+	top: 20px;
+	left: 26%;
+	width: 48%;
+	height: 30px;
+	text-align: center;
+	margin: 0px;
+	border-radius:15px 15px 0px 0px;
+	border-style: solid;
+	border-width: 3px;
+}
+div#convBox
+{
+	position: absolute;
+	top: 50px;
+	left: 26%;
+	width: 48%;
+	height: 60%;
+	margin: 0px auto;
+	border-radius: 0px 0px 15px 15px;
+	overflow: auto;
+	border-style: solid;
+	border-width: 3px;
+}
+    
+    
+div#memberBoxHead
+{
+	position: absolute;
+	top: 20px;
+	left: 3%;
+	width: 20%;
+	height: 30px;
+	text-align: center;
+	margin: 0px;
+	border-radius:15px 15px 0px 0px;
+	border-style: solid;
+	border-width: 3px;
+}
+div#memberBox
+{
+	position: absolute;
+	top: 50px;
+	left: 3%;
+	width: 20%;
+	height: 60%;
+	margin: 0px auto;
+	border-radius: 0px 0px 15px 15px;
+	text-align: center;
+	overflow: auto;
+	border-style: solid;
+	border-width: 3px;
+    }
+    div#UpdatePanel2
+    {
+        width: 90%;
+        margin: 0 auto;
+    }
+    div#memberBoxLegend
+    {
+	    padding:0px;
+	    margin: 0px auto;
+	    margin-left: 15px;
+	    text-align: center;
+        }
+        div#memberBoxLegend li
+        {
+	        margin:0;
+        }
+
+div#replyBoxHead
+{
+	position: absolute;
+	top: 20px;
+	right: 3%;
+	width: 20%;
+	height: 30px;
+	text-align: center;
+	margin: 0px;
+	border-radius:15px 15px 0px 0px;
+	border-style: solid;
+	border-width: 3px;
+}
+div#replyBox
+{
+	position: absolute;
+	top: 50px;
+	right: 3%;
+	width: 20%;
+	height: 60%;
+	margin: 0px auto;
+	border-radius: 0px 0px 15px 15px;
+	text-align: center;
+	border-style: solid;
+	border-width: 3px;
+    }
+    textarea.replyBoxMsg
+    {
+	    width: 97%;
+	    height: 200px;
+	    min-height: 82%;
+	    border-radius: 15px;
+	    margin: 3% auto;
+	    border-style: solid;
+	    border-width: 0px;
+    }
+    input.replyBoxSendMsg
+    {
+        margin-top: 3%;
+	    width: 97%;
+	    height: 35px;
+	    min-height: 9%;
+	    border-radius: 15px;
+	    border-style: solid;
+	    border-width: 2px;
+    }
+    
+    
+    
+/*meeting.aspx message windows*/
+div.member
+{
+    margin-bottom: 3px;
+    text-align: left;
+}
+div.domain
+{
+    margin-bottom: 10px;
+    margin-left: 20px;
+    text-align: left;
+}
+div.msg1,
+div.msg2
+{
+    width: 88%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    text-align: left;
+    overflow: visible;
+}
+div.msg1Title
+{
+    width: 100%;
+    margin-left: -2%;
+    overflow: hidden;
+    padding: 3px 9px 3px 9px;
+	border-radius:15px 15px 0px 0px;
+	
+	border-left-style: solid;
+	border-left-width: 2px;
+	border-top-style: solid;
+	border-top-width: 2px;
+	border-right-style: solid;
+	border-right-width: 2px;
+}
+div.msg2Title
+{
+    width: 100%;
+    margin-left: -2%;
+    overflow: hidden;
+    padding: 3px 9px 3px 9px;
+	border-radius: 0px 0px 15px 15px;
+	
+	border-left-style: solid;
+	border-left-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-right-style: solid;
+	border-right-width: 2px;
+}
+
+div.msg1Body
+{
+    width: 100%;
+    padding: 9px;
+    margin-left:-2%;
+	border-radius: 0px 0px 15px 15px;
+	word-wrap: break-word;
+	border-left-style: solid;
+	border-left-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-right-style: solid;
+	border-right-width: 2px;
+}
+div.msg2Body
+{
+    width: 100%;
+    padding: 9px;
+    margin-left:-2%;
+	border-radius:15px 15px 0px 0px;
+	word-wrap: break-word;
+	border-left-style: solid;
+	border-left-width: 2px;
+	border-top-style: solid;
+	border-top-width: 2px;
+	border-right-style: solid;
+	border-right-width: 2px;
+}
+span.name2
+{
+    float: right;
+}
+span.date2
+{
+    float: right;
+    padding-right: 20px;
+}
+span.delete2
+{
+    float: left;
+    padding-right: 20px;
+}
+span.name1
+{
+    float: left;
+}
+span.date1
+{
+    float: left;
+    padding-left: 20px;
+}
+span.delete1
+{
+    float: right;
+    padding-left: 20px;
+}
+
+
+
+
+
+
+/*meetinglist.aspx*/
+div.meetingList
+{
+	padding:0px;
+	width: 100%;	
+	margin-top:0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+    
+    
+    
+    
+/*chooseTranscript.aspx*/
+.transCol1
+{
+    width: 10%;
+    text-align: center;
+}
+.transCol2
+{
+    width: 90%;
+}
+.submitFoot
+{
+    text-align: center;
+    margin: 2px auto;
+    width: 100%;
+    font-size: 0;
+}

@@ -1,0 +1,277 @@
+/****Tag Configuration****/
+body 
+{
+    background: #FFA200;
+}
+img
+{
+    visibility: hidden;
+}
+
+/*links*/
+a
+{
+	color: #006Ba2;
+}
+a:hover
+{
+	color: #000000;
+}
+
+
+/*lists*/
+li
+{
+	color: #975BaA;
+}
+li.title
+{
+	color: #771B8A;
+}
+
+
+/*forms*/
+input,
+select,
+textarea
+{
+	color: #FFFFFF;
+	background:#470B5A;
+	border-color: #470B5A;
+}
+input.submit
+{
+	color: #FFFFFF;
+	background:#874B9A;
+	border-color:#470B5A;
+}
+
+
+/*Tables*/
+    table.tableList th 
+    {
+	    color: #000000;
+	    border-color:#B35215;
+	    background:#B35215;
+    }
+    div.tableTitle
+    {
+	    color: #000000;
+	    background:#B35215;
+	    border-color:#B35215;
+    }
+    table.tableList td 
+    {
+	    color: #000000;
+	    border-color:#B35215;
+	    background:#FFc240;
+    }
+
+
+/****Universal dividers****/
+div#pageTitle 
+{
+	background: #571B6A;
+	border-bottom: #975BaA
+}
+div#pageTitleText
+{
+	color:#FFA200;
+}
+div#navigation 
+{
+	background: #975BaA;
+}
+div#navigation a
+{
+    color:#003B72;
+}
+div#navigation a:hover
+{
+    color:#000000;
+}
+
+
+/****index.aspx****/
+div#selectTheme 
+{
+	background:#FFc240;
+	border-color:#FFc240;
+}
+div#joinMeeting 
+{
+	background:#FFc240;
+	border-color:#FFc240;
+}
+div#createMeeting 
+{
+	background:#FFc240;
+	border-color:#FFc240;
+    }
+    div#cal1
+    {
+        background: url('../images/calendar.gif');
+        }
+        div#cal1:hover #Calendar1
+        {
+            background:#FFFFFF;
+            border-color: #9CCC3C;
+            color: #50720B; 
+        }
+
+
+/****meeting.aspx****/
+div#convBoxHead
+{
+	color:#571B6A;
+	background:#FFc240;
+	border-color:#FFc240;
+}
+div#convBox
+{
+	background:#FFc240;
+	border-color:#FFc240;
+}
+div#memberBoxHead
+{
+	color:#571B6A;
+	background:#FFc240;
+	border-color:#FFc240;
+}
+div#memberBox
+{
+	background:#FFc240;
+	border-color:#FFc240;
+    }
+div#replyBoxHead
+{
+	color:#571B6A;
+	background:#FFc240;
+	border-color:#FFc240;
+}
+div#replyBox
+{
+	background:#FFc240;
+	border-color:#FFc240;
+    }
+    textarea.replyBoxMsg
+    {
+	    border-color:#571B6A;
+	    background: #571B6A;
+	    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#975BaA', endColorstr='#571B6A');
+	    background: -moz-linear-gradient(top,  #975BaA,  #571B6A);
+    }
+    input.replyBoxSendMsg
+    {
+	    background:#571B6A;
+	    color: #a77BcA;
+	    border-color:#571B6A;
+    }
+    
+    
+/*meeting.aspx message windows*/
+div.member
+{
+    color:#000000;
+    
+}
+div.domain
+{
+    color:#975BaA;
+}
+div.msg1Title,
+div.msg3Title
+{
+    border-color: #FFA200;
+    background: #FFA200;
+}
+div.msg2Title,
+div.msg4Title
+{
+    border-color: #975BaA;
+    background: #975BaA;
+}
+div.msg1Body,
+div.msg3Body
+{
+    color: #000000;
+    border-color: #FFA200;
+	background:#FFA200;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFc240', endColorstr='#FFA200');
+	background: -moz-linear-gradient(top,  #FFc240,  #FFA200);
+}
+div.msg2Body,
+div.msg4Body
+{
+    color: #FFFFFF;
+    border-color: #975BaA;
+	background:#FFA200;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#571B6A', endColorstr='#975BaA');
+	background: -moz-linear-gradient(top,  #571B6A,  #975BaA);
+}
+span.name2
+{
+	color:#FFA200;
+}
+span.name1
+{
+	color:#771B8A;
+}
+span.name3,
+span.name4
+{
+	color:#000000;
+}
+span.delete1 a,
+span.delete2 a
+{
+	color:#242B47;
+}
+span.delete3 a,
+span.delete4 a
+{
+	color:#FF4444;
+}
+span.delete1 a:hover,
+span.delete2 a:hover,
+span.delete3 a:hover,
+span.delete4 a:hover
+{
+	color:#000000;
+}
+div.msg3Title
+{
+    border-color: #A30000;
+    background: #A30000;
+}
+div.msg3Body
+{
+    color: #FFFFFF;
+    border-color: #A30000;
+	background:#A30000;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#AB1C36', endColorstr='#A30000');
+	background: -moz-linear-gradient(top,  #AB1C36,  #A30000);
+}
+div.msg4Title
+{
+    border-color: #AB1C36;
+    background: #AB1C36;
+}
+div.msg4Body
+{
+    color: #FFFFFF;
+    border-color: #AB1C36;
+	background:#AB1C36;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A30000', endColorstr='#AB1C36');
+	background: -moz-linear-gradient(top,  #A30000,  #AB1C36);
+}
+
+
+
+  
+/*chooseTranscript.aspx*/
+.checkbox 
+{
+    background:#FFc240;
+    border-color:#FFc240;
+}

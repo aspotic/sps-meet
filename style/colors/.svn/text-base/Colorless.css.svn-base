@@ -1,0 +1,25 @@
+/*forms*/
+input,
+select,
+textarea
+{
+	color: #FFFFFF;
+	background:#000000;
+	border-color: #000000;
+}
+input.submit
+{
+	color: #FFFFFF;
+	background:#;
+	border-color:#000000;
+}
+    div#cal1
+    {
+        background: url('../images/calendar.gif');
+        }
+        div#cal1:hover #Calendar1
+        {
+            background:#FFFFFF;
+            border-color: #000000;
+            color: #000000; 
+        }

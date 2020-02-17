@@ -1,0 +1,298 @@
+/****Tag Configuration****/
+body 
+{
+    background: #EBF7E1;
+}
+div#spacer
+{  
+    background: #FFFFFF;
+}
+
+/*links*/
+a
+{
+	color: #537736;
+}
+a:hover
+{
+	color: #000000;
+}
+
+
+/*lists*/
+ul
+{
+	color:#ffffff;
+}
+li
+{
+	color: #9CCC3C;
+}
+li.title
+{
+	color: #50720B;
+}
+/*forms*/
+input,
+select,
+textarea
+{
+	color: #000000;
+	background:#E2F5D2;
+	border-color:#9CCC3C;
+}
+input.submit
+{
+	color: #50720B;
+	background:#D7E9C8;
+	border-color:#50720B;
+}
+
+
+/*Tables*/
+table.tableList th 
+{
+	color: #50720B;
+	border-color:#9CCC3C;
+	background:#EBF7E1;
+}
+div.tableTitle
+{
+	color: #50720B;
+	background:#EBF7E1;
+	border-color:#9CCC3C;
+}
+table.tableList td 
+{
+	color: #000000;
+	border-color:#9CCC3C;
+	background:#EBF7E1;
+}
+    
+    
+/****Universal dividers****/
+div#pageTitle 
+{
+	color:#3C651B;
+	background: #EBF7E1;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EBF7E1', endColorstr='#FFFFFF');
+	background: -moz-linear-gradient(top,  #EBF7E1,  #FFFFFF);
+}
+div#pageTitleText
+{
+	color:#3C651B;
+}
+div#navigation 
+{
+	background: #FFFFFF;
+}
+div#body 
+{
+	background: #EBF7E1;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#EBF7E1');
+	background: -moz-linear-gradient(top,  #FFFFFF,  #EBF7E1);
+}
+
+
+/****index.aspx****/
+div#selectTheme 
+{
+	background:#EBF7E1;
+	border-color:#9CCC3C;
+}
+div#joinMeeting
+{
+	background:#EBF7E1;
+	border-color:#9CCC3C;
+}
+div#createMeeting 
+{
+	background:#EBF7E1;
+	border-color:#9CCC3C;
+    }
+    div#cal1
+    {
+        background: url('../images/calendar.gif');
+        }
+        div#cal1:hover #Calendar1
+        {
+            background:#FFFFFF;
+            border-color: #9CCC3C;
+            color: #50720B; 
+        }
+
+
+/****meeting.aspx****/
+div#bodyMeet
+{
+	background: #EBF7E1;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#EBF7E1');
+	background: -moz-linear-gradient(top,  #FFFFFF,  #EBF7E1);
+}
+div#convBoxHead
+{
+	background:#EBF7E1;
+	border-color:#9CCC3C;
+	color:#3C651B;
+}
+div#convBox
+{
+	background:#EBF7E1;
+	border-color:#9CCC3C;
+}
+div#memberBoxHead
+{
+	background:#EBF7E1;
+	border-color:#9CCC3C;
+	color:#3C651B;
+}
+div#memberBox
+{
+	background:#EBF7E1;
+	border-color:#9CCC3C;
+    }
+div#replyBoxHead
+{
+	background:#EBF7E1;
+	border-color:#9CCC3C;
+	color:#3C651B;
+}
+div#replyBox
+{
+	background:#EBF7E1;
+	border-color:#9CCC3C;
+    }
+    #replyBoxMsg
+    {
+	    background:E2F5D2;
+    }
+    #replyBoxSendMsg
+    {
+	    background:#D7E9C8;
+	    color: #50720B;
+	    border-color:#50720B;
+    }
+    
+    
+/*meeting.aspx message windows*/
+div.member
+{
+    color:#000000;
+    
+}
+div.domain
+{
+    color:#7Caa1C;
+}
+div.msg1
+{
+    border-color:#7Caa1C;
+}
+div.msg1Title,
+div.msg3Title
+{
+    border-color: #7Caa1C;
+    background: #7Caa1C;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr='#7Caa1C', endColorstr='#EBF7E1');
+	background: -moz-linear-gradient(left,  #7Caa1C,  #EBF7E1);
+}
+div.msg2Title,
+div.msg4Title
+{
+    border-color: #7Caa1C;
+    background: #7Caa1C;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr='#EBF7E1', endColorstr='#7Caa1C');
+	background: -moz-linear-gradient(left,  #EBF7E1,  #7Caa1C);
+}
+div.msg1Body,
+div.msg3Body
+{
+    background: #ffffff;
+    color: #000000;
+    border-color: #7Caa1C;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr='#ffffff', endColorstr='#EBF7E1');
+	background: -moz-linear-gradient(left,  #ffffff,  #EBF7E1);
+}
+div.msg2Body,
+div.msg4Body
+{
+	background:#dBebd1;
+    color: #000000;
+    border-color: #7Caa1C;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr='#EBF7E1', endColorstr='#D7E9C8');
+	background: -moz-linear-gradient(left,  #EBF7E1,  #D7E9C8);
+}
+span.name1,
+span.name3
+{
+	color:#dCfd6C;
+}
+span.name2,
+span.name4
+{
+	color:#dCfd6C;
+}
+span.date1
+{
+    color: #3C651B;
+}
+span.date2
+{
+    color: #3C651B;
+}
+span.delete1
+{
+    color: #3C651B;
+}
+span.delete2
+{
+    color: #3C651B;
+}
+
+
+
+
+span.delete3 a,
+span.delete4 a
+{
+    color: #AB1C36;
+}
+span.delete3 a:hover,
+span.delete4 a:hover
+{
+    color: #000000;
+}
+div.msg4Title
+{
+    border-color: #AB1C36;
+    background: #AB1C36;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr='#EBF7E1', endColorstr='#AB1C36');
+	background: -moz-linear-gradient(left,  #EBF7E1,  #AB1C36);
+}
+div.msg3Title
+{
+    border-color: #AB1C36;
+    background: #AB1C36;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr='#AB1C36', endColorstr='#EBF7E1');
+	background: -moz-linear-gradient(left,  #AB1C36,  #EBF7E1);
+}
+div.msg4Body
+{
+    border-color: #AB1C36;
+}
+div.msg3Body
+{
+    border-color: #AB1C36;
+}
+span.date3,
+span.date4
+{
+    color: #8B0016;
+}
+    
+/*chooseTranscript.aspx*/
+.checkbox 
+{
+    background:#EBF7E1;
+    border-color:#EBF7E1;
+}

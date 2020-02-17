@@ -1,0 +1,382 @@
+/****Tag Configuration****/
+html
+{
+	height: 100%;
+	width: 100%;
+}
+body 
+{
+	padding:0;
+	margin:0;
+	height:100%;
+	width: 100%;
+}
+a
+{
+    text-decoration: none;
+}
+a:hover
+{
+    text-decoration: none;
+}
+/*Tables*/
+.col1,
+.col1j
+{
+    width: 100%;
+}
+.col2,
+.col3,
+.col2j,
+.col3j,
+.col4j
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0; 
+    visibility: hidden;
+	border-style: solid;
+	border-width: 0;
+}
+table.tableList
+{
+	width:100%;	
+	margin: 0 auto;
+	margin-bottom:0.5em;
+    }
+    table.tableList th 
+    {	
+        visibility: hidden;
+        height: 0em;
+	    border-style: solid;
+	    border-width: 0;
+    }
+    div.tableTitle
+    {	
+        text-align: center;
+	    border-style: solid;
+	    border-width: 0;
+    }
+    table.tableList td 
+    {
+        overflow: hidden;
+	    border-style: solid;
+	    border-width: 0.1em;
+        text-align: left;
+    }
+
+
+
+/*lists*/
+ul
+{
+	list-style: none;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+}
+li
+{
+	padding: 0;
+	text-align: center;
+	margin-top:0.5em;
+}
+
+
+
+/***Forms***/
+input,
+select,
+textarea
+{
+    width: 95%;
+	text-align: left;
+	border-width: 0;
+    border-style: solid;
+	border-width: 0.1em;
+}
+input
+{
+    width: 85%;
+}
+.checkbox
+{
+    height: 1em;
+}
+.submit
+{
+    width: 95%;
+    padding: 0.2em 0 0.4em 0;
+	font-weight: bold;
+}
+
+
+/****Universal dividers****/
+div#navigation
+{
+    width: 100%;
+    text-align: center;
+	padding: 0.2em 0 0.4em 0;
+	overflow: visible;
+    margin: 1em auto;
+    position: relative;
+	border-top-style: solid;
+	border-top-width: 0.1em;
+	border-bottom-style: solid;
+	border-bottom-width: 0.3em;
+}
+div#pageTitle 
+{
+	padding: 0.25em auto;
+	overflow: hidden;
+	border-bottom-style: solid;
+	border-bottom-width: 0.5em;
+}
+div#pageTitleText
+{
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+div#pageTitleImage
+{
+    visibility: hidden;
+    height:0;
+}
+
+
+/****index.aspx****/
+div#selectTheme,
+/*{
+: hidden;
+    height: 0;
+	margin: 0;
+}*/
+div#joinMeeting,
+div#createMeeting
+{
+	width: 100%;
+	margin: 1.3em auto;
+	text-align: center;
+	border-top-style: solid;
+	border-top-width: 0.1em;
+	border-bottom-style: solid;
+	border-bottom-width: 0.3em;
+    }
+    div#cal1 #Calendar1
+    {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 85%;
+        margin: 0 auto;
+	    border-style: solid;
+	    border-width: 0.1em;
+        padding: 0.2em;
+        font-family: Verdana; 
+    }
+    div#cal1 #Calendar1 a
+    {
+        text-decoration: none;
+    }
+
+
+/****meeting.aspx****/
+span.block
+{
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+span.blockDiv
+{
+    height: 0;
+    margin: 0;
+    padding: 0;
+    display: block;
+    visibility: hidden;
+}
+div#bodyMeet
+{
+    position: relative;
+}
+div#replyBoxHead
+{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1.1em;
+	text-align: center;
+	position: absolute;
+	padding: 0.2em 0em 0.4em 0em;
+	border-top-style: solid;
+	border-top-width: 0.1em;
+}
+div#replyBox
+{
+	top: 1.6em;
+	left: 0;
+	width: 100%;
+	height: 6em;
+	text-align: center;
+	position: absolute;
+	border-bottom-style: solid;
+	border-bottom-width: 0.3em;
+    }
+    textarea.replyBoxMsg
+    {
+        height: 2.5em;
+        margin-top: 0.5em;
+        width: 85%;
+    }
+    input.replyBoxSendMsg
+    {
+        height: 1.5em;
+        margin-top: 0.5em;
+        width: 85%;
+    }
+ div#convBoxHead
+{
+	top: 9em;
+	left: 0;
+	width: 100%;
+	height: 1.1em;
+	text-align: center;
+	position: absolute;
+	padding: 0.2em 0 0.4em 0;
+	border-top-style: solid;
+	border-top-width: 0.1em;
+}
+div#convBox
+{
+	position: absolute;
+	top: 10.6em;
+	left: 0;
+	width: 100%;
+	overflow: visible;
+	margin: 0 auto;
+	padding-bottom: 0.5em;
+	border-bottom-style: solid;
+	border-bottom-width: 0.3em;
+}
+div#memberBoxHead
+{
+	height: 0;
+	visibility: hidden;
+}
+div#memberBox
+{
+	height: 0;
+	visibility: hidden;
+    }
+    div#UpdatePanel2
+    {
+        width: 90%;
+    }
+    div#memberBoxLegend
+    {
+	    height: 0;
+	    visibility: hidden;
+        }
+        div#memberBoxLegend li
+        {
+	        margin:0;
+        }
+        
+        
+         
+/*meeting.aspx message windows*/
+div.member
+{
+    display: block;
+    margin-bottom: 0.1em;
+    text-align: center;
+}
+div.domain
+{
+    display: block;
+    
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+span.name2,
+span.date2,
+span.delete2
+{
+    display: block;
+    text-align: right;
+}
+span.name1,
+span.date1,
+span.delete1
+{
+    display: block;
+    text-align: left;
+}
+div.msg1,
+div.msg2
+{
+    width: 75%;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    text-align: left;
+    overflow: visible;
+}
+div.msg1Title
+{
+    width: 100%;
+    overflow: hidden;
+    margin-left: -10%;
+	border-style: solid;
+	border-width: 0.3em;
+}
+div.msg2Title
+{
+    width: 100%;
+    overflow: hidden;
+    margin-left: 10%;
+	border-style: solid;
+	border-width: 0.3em;
+}
+
+div.msg1Body
+{
+    width: 100%;
+	word-wrap: break-word;
+    margin-left: -10%;
+	border-style: solid;
+	border-width: 0.3em;
+}
+
+div.msg2Body
+{
+    width: 100%;
+	word-wrap: break-word;
+    margin-left: 10%;
+	border-style: solid;
+	border-width: 0.3em;
+}
+
+
+
+
+
+/*meetinglist.aspx*/
+div.meetingList
+{
+	padding:0;
+	width: 100%;
+}
+   
+    
+/*chooseTranscript.aspx*/
+.submitFoot
+{
+    text-align: center;
+    margin: 0.3em auto;
+    width: 100%;
+}

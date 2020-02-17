@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/Application/!svn/ver/557/SPSMeet/App_Data
+END
+ASPNETDB.MDF
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/Application/!svn/ver/557/SPSMeet/App_Data/ASPNETDB.MDF
+END
+aspnetdb_log.ldf
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/Application/!svn/ver/557/SPSMeet/App_Data/aspnetdb_log.ldf
+END

@@ -1,0 +1,104 @@
+Public Class common
+    Inherits System.Web.UI.Page
+
+    'Description: Removes unwanted characters and words from user input strings
+    Function escape(InputString As String) As String
+        Dim a As String
+        a = InputString
+
+        'replace basic swear words
+        Dim swearString As String = "ass,asses,asshole,assholes,asskisser,asswipe,balls,bastard,beastial,beastiality,beastility,bestial,bestiality,bitch,bitcher,bitchers,bitches,bitchin,bitching,blow job,blowjob,blowjobs,bonehead,boner,browneye,browntown,bullshit,bung hole,butch,buttface,buttfuck,buttfucker,butthead,butthole,buttpicker,clit,cobia,cock,cocks,cocksuck,cocksucked,cocksucker,cocksucking,cocksucks,cooter,crap,cum,cummer,cumming,cums,cumshot,cunilingus,cunillingus,cunnilingus,cunt,cuntlick,cuntlicker,cuntlicking,cunts,cyberfuc,cyberfuck,cyberfucked,cyberfucker,cyberfuckers,cyberfucking,damn,dick,dike,dildo,dildos,dink,dinks,dipshit,dong,dumbass,dyke,fag,fagget,fagging,faggit,faggot,faggs,fagot,fagots,fags,fartings,farty,fatass,fatso,felatio,fellatio,fingerfuck,fingerfucked,fingerfucker,fingerfuckers,fingerfucking,fingerfucks,fistfuck,fistfucked,fistfucker,fistfuckers,fistfucking,fistfuckings,fistfucks,fuck,fucked,fucker,fuckers,fuckin,fucking,fuckings,fuckme,fucks,fuk,fuks,furburger,gangbang,gangbanged,gangbangs,gaysex,gazongers,goddamn,gonads,gook,guinne,hardcoresex,homo,horniest,hotsex,hussy,jackass,jacking off,jackoff,jack-off,jap,jerk,jerk-off,jism,jiz,jizm,jizz,kike,kock,kondum,kondums,kraut,kum,kummer,kumming,kums,kunilingus,lesbo,mick,mothafuck,mothafucka,mothafuckas,mothafuckaz,mothafucked,mothafucker,mothafuckers,mothafuckin,mothafucking,mothafuckings,mothafucks,motherfuck,motherfucked,motherfucker,motherfuckers,motherfuckin,motherfucking,motherfuckings,motherfucks,muff,nigger,niggers,pecker,phonesex,phuk,phuked,phuking,phukked,phukking,phuks,phuq,piss,pissed,pissrr,pissers,pisses,pissin,pissing,pissoff,prick,pricks,pussies,pussy,pussys,queer,retard,schlong,sheister,shit,shited,shitfull,shiting,shitings,shits,shitted,shitter,shitters,shitting,shittings,shitty,sleaze,slut,sluts,smut,spunk,twat,wetback,whore,wop"
+        Dim swearList() As String = swearString.Split(",")
+        Dim cleanString As String = "Defenestrate,Agnomen,Crapulous,Doppelganger,Ambergris,Deus Ex Machina,Frabjous,Fop,Hemidemisemiquaver,Erinaceous,Lamprophony,Depone,Finnimbrun,floccinaucinihilipilification,Inaniloquent,Limerance,Mesonoxian,Mungo"
+        Dim cleanList() As String = cleanString.Split(",")
+        Dim upperbound As Integer = 17
+        Randomize()
+        Dim randVal As Integer = CInt(Int((upperbound + 1) * Rnd()))
+        For i As Integer = 0 To swearList.Length - 1 Step 1
+            a = Replace(a, " " & swearList(i) & " ", " " & cleanList(randVal) & " ")
+        Next
+
+        'Replace html and sql sensitive characters
+        a = Replace(a, "'", "''")
+        a = Replace(a, " ", "&nbsp;")
+        a = Replace(a, "<", "&lt;")
+        a = Replace(a, ">", "&gt;")
+        a = Replace(a, vbCrLf, "<br />")
+
+        Return a
+    End Function
+
+    'Description: does the same as escape(), but also removes spaces to keep them from occuring in meeting names that will be placed in urls
+    Function escapespace(InputString As String) As String
+        Dim a As String
+        a = InputString
+        a = Replace(a, "'", "''")
+        a = Replace(a, " ", "")
+        Return a
+    End Function
+
+    'Description: Do a basic check to see if the user is on a mobile browser.  if they are, then if no theme cookie is set, set it to the mobile theme mode, otherwise use SPSGreen
+    Sub setDefaultTheme()
+        Dim bInfo As HttpBrowserCapabilities = Request.Browser
+        If Request.Cookies("LayoutTheme") Is Nothing Then
+            If bInfo.IsMobileDevice Then
+                Response.Cookies("ColorTheme").Value = "Mobile"
+                Response.Cookies("LayoutTheme").Value = "Mobile"
+                Response.Cookies("FontTheme").Value = "Mobile"
+                Response.Cookies("Stream").Value = "Hide"
+            Else
+                Response.Cookies("ColorTheme").Value = "SPSGreen"
+                Response.Cookies("LayoutTheme").Value = "Box"
+                Response.Cookies("FontTheme").Value = "SketchRockwell"
+                Response.Cookies("Stream").Value = "Hide"
+            End If
+        End If
+    End Sub
+
+    'Description: Updates tables to contain proper entries based on current date
+    Sub updateTableHistory()
+        'Open DB Connection
+        Dim conn = Server.CreateObject("ADODB.Connection")
+        Dim rs = Server.CreateObject("ADODB.recordset")
+        ' conn.Open("Data Source=EDC-0085\SQLEXPRESS;Initial Catalog=spsmeet;Persist Security Info=True;User ID=spsmeet_user;Password=spsmeet")
+        conn.Open(ConfigurationManager.ConnectionStrings("spsmeetConnectionString").ConnectionString.ToString())
+
+        'Run SQL Query: Update old history list
+        Dim query As String = "MoveToHistory"
+        conn.Execute(query)
+
+        'Run SQL Query: Remove old meetings from history
+        query = "PurgeHistory"
+        conn.Execute(query)
+
+        'Close DB Connection
+        conn.close()
+    End Sub
+
+    'Description: Verifies the user owns the meeting. if they don't, then they are redirected to redirectLocation
+    Sub verifyMeetingOwner(redirectLocation As String)
+        'Make sure it is the owner attempting to get through
+        Dim conn = Server.CreateObject("ADODB.Connection")
+        Dim rs = Server.CreateObject("ADODB.recordset")
+        'conn.Open("Data Source=SQLEXPRESS;Initial Catalog=spsmeet;Persist Security Info=True;User ID=spsmeet_user;Password=spsmeet")
+        conn.Open(ConfigurationManager.ConnectionStrings("spsmeetConnectionString").ConnectionString.ToString())
+
+        'Run SQL Query: check for the user/meeting name combo in the closed meetings list
+        Dim query As String = "SELECT eName,uDomain,uName FROM meet_history WHERE ( eName = '" & escape(Request.QueryString.Item("eName")) & "' AND uDomain = '" & User.Identity.Name.Split("\")(0) & "' AND uName = '" & User.Identity.Name.Split("\")(1) & "' )"
+
+        rs.Open(query, conn)
+        If rs.EOF Then
+            rs.close()
+
+            'Run SQL Query: check for the user/meeting name combo in the open meetings list
+            query = "SELECT eName,uDomain,uName FROM meet WHERE ( eName = '" & escape(Request.QueryString.Item("eName")) & "' AND uDomain = '" & User.Identity.Name.Split("\")(0) & "' AND uName = '" & User.Identity.Name.Split("\")(1) & "' )"
+            rs.Open(query, conn)
+            If rs.EOF Then
+                rs.close()
+                conn.close()
+                Response.Redirect(redirectLocation)
+            End If
+        End If
+    End Sub
+
+End Class

@@ -1,0 +1,174 @@
+/****Tag Configuration****/
+body 
+{
+    background: #EBF7E1;
+}
+img
+{
+    visibility: hidden;
+}
+a
+{
+    color: #A13030;
+}
+a:hover
+{
+    color: #2F4D17;
+}
+/*Tables*/
+.col1,
+.col1j
+{
+    width: 100%;
+}
+.col2,
+.col3,
+.col2j,
+.col3j,
+.col4j
+{
+    border-color: #000000;
+}
+    table.tableList th 
+    {	
+	    color: #50720B;
+	    border-color:#D3EDBE;
+	    background:#B5DE92;
+    }
+    div.tableTitle
+    {	
+	    color: #50720B;
+	    border-color:#D3EDBE;
+	    background:#B5DE92;
+    }
+    table.tableList td 
+    {
+	    color: #000000;
+	    border-color:#B5DE92;
+	    background:#D3EDBE;
+    }
+
+
+/*lists*/
+li
+{
+	color: #2F4D17;
+}
+
+
+/***Forms***/
+input,
+select,
+textarea
+{
+	color: #2F4D17;
+	background: #D7F0C2;
+	border-color: #6F8A5A;
+}
+.submit
+{
+	color: #FFFFFF;
+	background: #2F4D17;
+}
+
+
+/****Universal dividers****/
+div#navigation
+{
+	background: #B3D696;
+	border-color: #2F4D17;
+}
+div#pageTitle 
+{
+	color: #2F4D17;
+	background: #B3D696;
+	border-color: #2F4D17
+}
+
+
+/****index.aspx****/
+div#joinMeeting,
+div#selectTheme,
+div#createMeeting
+{
+	color: #2F4D17;
+	background: #B3D696;
+	border-color: #2F4D17;
+    }
+    div#cal1 #Calendar1
+    {
+        background:#FFFFFF;
+        border-color: #9CCC3C;
+        color: #50720B; 
+    }
+
+
+/****meeting.aspx****/
+div#replyBoxHead
+{
+	background: #B3D696;
+	border-color: #2F4D17;
+}
+div#replyBox
+{
+	background:#B3D696;
+	border-color: #2F4D17;
+}
+div#convBoxHead
+{
+	background: #B3D696;
+	border-color: #2F4D17;
+}
+div#convBox
+{
+	background: #B3D696;
+	border-color: #2F4D17;
+}
+div#memberBoxHead
+{
+	background: #B3D696;
+	border-color: #2F4D17;
+}
+div#memberBox
+{
+	background: #B3D696;
+	border-color: #2F4D17;
+}
+
+         
+/*meeting.aspx message windows*/
+div.member
+{
+    color:#000000;
+}
+div.msg1Title
+{
+    background: #92B874;
+    border-color: #92B874;
+}
+div.msg2Title
+{
+    background: #76A352;
+    border-color: #76A352;
+}
+
+div.msg1Body
+{
+	color: #000000;
+	background: #D2F2B8;
+    border-color: #92B874;
+}
+
+div.msg2Body
+{
+	color: #204007;
+	background: #E3F5D5;
+    border-color: #76A352;
+}
+
+    
+/*chooseTranscript.aspx*/
+.submitFoot
+{
+    color:#E3F5D5; 
+}
